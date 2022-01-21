@@ -1,15 +1,15 @@
 // Business Logic
 
 function beepBoop(num) {
-  let numArray = [];
+  let numString = "0";
 
   if (isNaN(num)) {
     return "Please enter a number";
   } 
 
-  if (num === "1") {
-    numArray.push(num);
-    console.log(numArray);
+  if (num === "0") {
+    numString.concat(num);
+    console.log(numString);
   }
   else {
     return false;
