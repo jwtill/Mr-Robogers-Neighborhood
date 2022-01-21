@@ -39,6 +39,10 @@ Test: "It should return results using the correct presidence(3 > 2 > 1) for high
 Code: beepBoop(23);
 Expected Output: 0, Beep, Boop, Won't you be my neighbor, 4, 5, 6, 7, 8, 9, Beep, Beep, Boop, Won't you be my neighbor, Beep, Beep, Beep, Beep, Beep, Beep, Boop, Boop, Boop, Won't you be my neighbor
 
+Test: "User should be able to enter a new number and it should present new results over and over again"
+Code: beepBoop(10);
+Expected Output: Page will reload and display new output
+
 
 
 

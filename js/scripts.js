@@ -23,6 +23,7 @@ function beepBoop(num) {
     }
     else 
     output.push(i);
+    
 }
 
 return output;
@@ -35,7 +36,7 @@ $(document).ready(function(){
   $("#user-entry").submit(function(event) {
   event.preventDefault();
   let userNum = $("#num-entry").val();
-  let result = beepBoop(userNum);
+  let result = beepBoop(userNum).join(", ");
   $("#results").text(result); 
   $("#results").show();
   });
