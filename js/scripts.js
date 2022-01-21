@@ -6,10 +6,7 @@ function beepBoop(num) {
   } 
   else {
     for (i=0; i<=parseInt(num); i++) {
-      if (i === 0) {
-        output.push("0");
-      }
-      else if ((i === 3) || (i.toString().includes("3"))) {
+      if ((i === 3) || (i.toString().includes("3"))) {
         output.push("Won't you be my neighbor");
       }  
       else if ((i === 2) || (i.toString().includes("2"))){
