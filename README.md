@@ -25,6 +25,12 @@ Expected Output: 0, Boop
 
 Test: "It should return "Won't you be my neighbor" if a 3 is entered"
 Code: beepBoop(3);
-Expected Output: 0, Won't you be me neighbor 
+Expected Output: 0, Won't you be me neighbor
+
+Test: "It should return "A larger number takes presidence over a smaller number for previous tests"
+Code: beepBoop(23);
+Expected Output: 0, Won't you be me neighbor
+
+
 
 
