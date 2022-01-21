@@ -24,7 +24,9 @@ function beepBoop(num) {
     else 
     output.push(i);
 }
+
 return output;
+
 }
 
 // UI Logic
