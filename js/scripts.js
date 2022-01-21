@@ -5,15 +5,15 @@ function beepBoop(num) {
     output.push("Please enter a number 0 or greater.");
   } 
   else {
-    for (i=0; i<=parseInt(num); i++) {
+    for (i = 0; i <= parseInt(num); i++) {
       if ((i === 3) || (i.toString().includes("3"))) {
-        output.push("Won't you be my neighbor");
+        output.push("Won't you be my neighbor?");
       }  
       else if ((i === 2) || (i.toString().includes("2"))){
-        output.push("Boop");
+        output.push("Boop!");
       }
       else if ((i === 1) || (i.toString().includes("1"))) {
-        output.push("Beep");
+        output.push("Beep!");
       }
       else 
       output.push(i);
@@ -29,7 +29,8 @@ $(document).ready(function(){
   event.preventDefault();
   let userNum = $("#num-entry").val();
   let result = beepBoop(userNum).join(", ");
-  $("#results").text(result); 
+  $("#results").hide();
+  $("#results").text(result);
   $("#results").show();
   });
 });
