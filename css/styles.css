@@ -5,3 +5,7 @@ form {
 #num-entry {
   width: 120px;
 }
+
+#results {
+  display: none;
+}

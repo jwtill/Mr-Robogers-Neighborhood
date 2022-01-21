@@ -26,3 +26,15 @@ function beepBoop(num) {
 }
 return output;
 }
+
+// UI Logic
+
+$(document).ready(function(){
+  $("#user-entry").submit(function(event) {
+  event.preventDefault();
+  let userNum = $("#num-entry").val();
+  let result = beepBoop(userNum);
+  $("#results").text(result); 
+  $("#results").show();
+  });
+});
