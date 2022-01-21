@@ -17,6 +17,6 @@ Expected Output: 0
 
 Test: "It should return "Beep if a 1 is entered"
 Code: beepBoop();
-Expected Output: 0, Beep
+Expected Output: 0, Beep 
 
 
