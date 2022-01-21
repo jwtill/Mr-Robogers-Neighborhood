@@ -1,14 +1,17 @@
 // Business Logic
 
 function beepBoop(num) {
+  let numArray = [];
+
   if (isNaN(num)) {
-    return false;
+    return "Please enter a number";
   } 
-  
+
   if (num === "1") {
-    return "Beep";
+    numArray.push(num);
+    console.log(numArray);
   }
   else {
-    return 0;
+    return false;
   }
 }
