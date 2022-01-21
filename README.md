@@ -43,6 +43,10 @@ Test: "User should be able to enter a new number and it should present new resul
 Code: beepBoop(10);
 Expected Output: Page will reload and display new output
 
+Test: "If user enters negative number, they will asked to enter a positive one."
+Code: beepBoop(-1);
+Expected output: "Please enter a number 0 or greater."
+
 
 
 
