@@ -15,8 +15,12 @@ Test: "It should return a string with a 0 if the number 0 is inputted"
 Code: beepBoop(0);
 Expected Output: 0
 
-Test: "It should return "Beep if a 1 is entered"
-Code: beepBoop();
+Test: "It should return "Beep" if a 1 is entered"
+Code: beepBoop(1);
 Expected Output: 0, Beep 
+
+Test: "It should return "Boop" if a 2 is entered"
+Code: beepBoop(2);
+Expected Output: 0, Boop 
 
 

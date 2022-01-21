@@ -16,6 +16,10 @@ function beepBoop(num) {
     console.log("Got to second conditional");
     return "Beep";
   }
+  else if (numString.includes("2")) {
+    console.log("Got to third conditional");
+    return "Boop";
+  }
   // else {
   //   return false;
   // }
