@@ -23,4 +23,8 @@ Test: "It should return "Boop" if a 2 is entered"
 Code: beepBoop(2);
 Expected Output: 0, Boop 
 
+Test: "It should return "Won't you be my neighbor" if a 3 is entered"
+Code: beepBoop(3);
+Expected Output: 0, Won't you be me neighbor 
+
 
