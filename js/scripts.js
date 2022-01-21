@@ -7,26 +7,30 @@ function beepBoop(num) {
 
   let numString = "";
   numString = numString.concat(num);
-  console.log("numString Val:", num);
-  if (numString.includes("0")) {
-    console.log("Includes 0");
-    return "0";
-  }
-  else if (numString.includes("3")) {
-    console.log("Includes 3");
-    return "Won't you be my neighbor";
-  }  
-  else if (numString.includes("2")) {
-    console.log("Includes 2");
-    return "Boop";
-  }
-  else if (numString.includes("1")) {
-    console.log("Includes 1");
-    return "Beep";
-  }
-  
-  
-  // else {
-  //   return false;
-  // }
+  console.log("numString Value:", num);
+  let output = [];
+
+  for (i=0; i<=parseInt(numString); i++) {
+    console.log("value of i:", i);
+
+    if (i === 0) {
+      console.log("Includes 0");
+      output.push("0");
+    }
+    else if (i === 3) {
+      console.log("Includes 3");
+      output.push("Won't you be my neighbor");
+    }  
+    else if (i === 2) {
+      console.log("Includes 2");
+      output.push("Boop");
+    }
+    else if (i === 1) {
+      console.log("Includes 1");
+      output.push("Beep");
+    }
+    else 
+    output.push(i);
+}
+return output;
 }
