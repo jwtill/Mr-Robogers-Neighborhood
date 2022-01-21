@@ -11,10 +11,12 @@ Test: "User input should be a number"
 Code: beepBoop("c");
 Expected output: false;
 
-Test: "It should return an array with a 0 if the number 0 is inputted"
+Test: "It should return a string with a 0 if the number 0 is inputted"
 Code: beepBoop(0);
 Expected Output: 0
 
-Test: "It should..." // this is the start of 2nd test for beepBoop()
+Test: "It should return "Beep if a 1 is entered"
+Code: beepBoop();
+Expected Output: 0, Beep
 
 

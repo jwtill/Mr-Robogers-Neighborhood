@@ -1,17 +1,22 @@
 // Business Logic
 
 function beepBoop(num) {
-  let numString = "0";
-
   if (isNaN(num)) {
     return "Please enter a number";
   } 
 
-  if (num === "0") {
-    numString.concat(num);
-    console.log(numString);
+  let numString = "";
+  numString = numString.concat(num);
+  console.log("numString Val:", num);
+  if (numString.includes("0")) {
+    console.log("Got to first conditional");
+    return "0";
   }
-  else {
-    return false;
+  else if (numString.includes("1")) {
+    console.log("Got to second conditional");
+    return "Beep";
   }
+  // else {
+  //   return false;
+  // }
 }
