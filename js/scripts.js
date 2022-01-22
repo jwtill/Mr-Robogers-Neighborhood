@@ -1,11 +1,11 @@
 // Business Logic
 function beepBoop(num) {
   let output = [];
-  if (isNaN(num) || num < 0) {
-    output.push("Please enter a number 0 or greater.");
+  if (isNaN(num) || num < 0 || num === "") {
+    output.push("Please enter a number that is 0 or greater.");
   } 
   else {
-    for (i = 0; i <= parseInt(num); i++) {
+    for (let i = 0; i <= parseInt(num); i++) {
       if ((i === 3) || (i.toString().includes("3"))) {
         output.push("Won't you be my neighbor?");
       }  
@@ -26,11 +26,19 @@ return output;
 
 $(document).ready(function(){
   $("#user-entry").submit(function(event) {
-  event.preventDefault();
-  let userNum = $("#num-entry").val();
-  let result = beepBoop(userNum).join(", ");
-  $("#results").hide();
-  $("#results").text(result);
-  $("#results").show();
+    event.preventDefault();
+    const userNum = $("#num-entry").val();
+    const result = beepBoop(userNum).join(", ");
+    $("#results").text(result);
+    $("#results").show();
+    $("#reverse").show();
+  });
+  $("#reverse").click(function(event){
+    const userNum = $("#num-entry").val();
+    const result = beepBoop(userNum).reverse().join(", ");
+    $("#results").text(result);
+    $("#results").show();
+    $("#reverse").show();
+    $("#reverse").hide();
   });
 });

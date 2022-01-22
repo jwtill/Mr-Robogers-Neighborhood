@@ -12,6 +12,7 @@ form {
   padding: 50px;
   background-color: white;
   opacity: .9;
+  border-radius: 25px;
 }
 h1 {
   color: white;
@@ -23,15 +24,26 @@ h1 {
   width: 120px;
 }
 
-#results {
+#results, #reverse{
   display: none;
   background-color: white;
   opacity: .9;
   padding: 20px;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+#reverse {
+  position:fixed;
+  margin-left: 50px;
 }
 
 .btn-dark {
   margin-top: 15px;
+}
+.btn-red {
+  color: #fff;
+  background-color: red;
+  border-color: #343a40;
 }
 .robo-talk {
   color:  #9C1A18;
